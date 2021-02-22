@@ -1,4 +1,4 @@
-package com.badrun.github_finder.utils.ext
+package com.badrun.sehatq_test.utils.ext
 
 import android.text.Editable
 import android.text.TextWatcher
