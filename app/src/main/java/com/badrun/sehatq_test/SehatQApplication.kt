@@ -1,4 +1,6 @@
 package com.badrun.sehatq_test
 
-class SehatQApplication {
+import android.app.Application
+
+class SehatQApplication: Application() {
 }
