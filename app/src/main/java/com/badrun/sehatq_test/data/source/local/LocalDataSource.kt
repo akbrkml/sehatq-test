@@ -11,11 +11,13 @@ class LocalDataSource(
     private val categoryDao: CategoryDao
 ) {
 
+    fun getAllProduct(): List<ProductEntity> = productDao.getAll()
+
     fun searchProduct(name: String): Flow<List<ProductEntity>> = productDao.getListByTitle(name)
 
     suspend fun insertProduct(productList: List<ProductEntity>) = productDao.insert(productList)
 
-    fun getAllCategory(): Flow<List<CategoryEntity>> = categoryDao.getAll()
+    fun getAllCategory(): List<CategoryEntity> = categoryDao.getAll()
 
     suspend fun insertCategory(categoryList: List<CategoryEntity>) =
         categoryDao.insert(categoryList)
