@@ -3,7 +3,7 @@ package com.badrun.sehatq_test.data.source.remote.response
 
 import com.google.gson.annotations.SerializedName
 
-data class ProductPromoResponse(
+data class ProductResponse(
     @SerializedName("description")
     val description: String,
     @SerializedName("id")

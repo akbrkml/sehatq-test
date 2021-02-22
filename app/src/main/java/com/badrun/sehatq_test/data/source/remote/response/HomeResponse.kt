@@ -6,5 +6,5 @@ data class HomeResponse(
     @SerializedName("category")
     val category: List<CategoryResponse>,
     @SerializedName("productPromo")
-    val productPromo: List<ProductPromoResponse>
+    val productPromo: List<ProductResponse>
 )
