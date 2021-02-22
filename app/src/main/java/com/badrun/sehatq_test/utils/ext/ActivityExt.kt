@@ -1,4 +1,4 @@
-package com.badrun.github_finder.utils.ext
+package com.badrun.sehatq_test.utils.ext
 
 import android.app.Activity
 import android.view.inputmethod.InputMethodManager
