@@ -1,5 +1,6 @@
 package com.badrun.sehatq_test.data
 
+import com.badrun.sehatq_test.data.source.remote.network.ApiResponse
 import kotlinx.coroutines.flow.*
 
 abstract class NetworkBoundResource<ResultType, RequestType> {
