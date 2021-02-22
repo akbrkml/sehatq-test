@@ -1,4 +1,4 @@
-package com.badrun.github_finder.data
+package com.badrun.sehatq_test.data
 
 sealed class Resource<out T>(val data: T? = null, val message: String? = null) {
     class Success<T>(data: T) : Resource<T>(data)
