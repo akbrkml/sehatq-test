@@ -1,4 +1,4 @@
-package com.badrun.github_finder.utils
+package com.badrun.sehatq_test.utils
 
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
