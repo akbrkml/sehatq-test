@@ -10,7 +10,7 @@ data class ProductEntity(
     val id: String,
     val description: String,
     val imageUrl: String,
-    val loved: Int,
+    var loved: Int,
     val price: String,
     val title: String
 )

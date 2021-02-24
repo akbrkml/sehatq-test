@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">sehatq-test</string>
+    <string name="label_search">Cari…</string>
+    <string name="description_back_button">Back button product detail</string>
+    <string name="description_share_button">Share button</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="label_buy">Buy</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="label_no_data">No data</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="label_remember_me">Remember me</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_sign_in_with_facebook">Sign In with Facebook</string>
+    <string name="label_sign_in_with_google">Sign In with Google</string>
+    <string name="facebook_app_id">130700718955406</string>
+    <string name="fb_login_protocol_scheme">fb130700718955406</string>
 </resources>

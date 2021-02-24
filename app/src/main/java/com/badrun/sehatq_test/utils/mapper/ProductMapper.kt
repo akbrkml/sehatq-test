@@ -34,4 +34,13 @@ object ProductMapper {
             )
         }
 
+    fun mapDomainToEntity(input: Product) = ProductEntity(
+        id = input.id,
+        title = input.title,
+        description = input.description,
+        imageUrl = input.imageUrl,
+        loved = input.loved,
+        price = input.price
+    )
+
 }
