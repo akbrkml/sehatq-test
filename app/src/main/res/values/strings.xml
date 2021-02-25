@@ -16,4 +16,7 @@
     <string name="label_sign_in_with_google">Sign In with Google</string>
     <string name="facebook_app_id">130700718955406</string>
     <string name="fb_login_protocol_scheme">fb130700718955406</string>
+    <string name="label_success_buy_product">Success buy the product</string>
+    <string name="label_see_history">See History</string>
+    <string name="label_unexpected_error">Unexpected error</string>
 </resources>
