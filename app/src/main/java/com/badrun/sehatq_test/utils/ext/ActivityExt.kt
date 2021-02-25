@@ -25,6 +25,18 @@ fun FragmentActivity.showMessage(
     Snackbar.make(view, message, duration).show()
 }
 
+fun FragmentActivity.showMessage(
+    view: View,
+    message: String,
+    duration: Int = Snackbar.LENGTH_SHORT,
+    title: String,
+    action: () -> Unit
+) {
+    Snackbar.make(view, message, duration).setAction(title) {
+        action.invoke()
+    }.show()
+}
+
 fun Activity.share(name: String, price: String) {
     val share = Intent.createChooser(
         Intent().apply {
