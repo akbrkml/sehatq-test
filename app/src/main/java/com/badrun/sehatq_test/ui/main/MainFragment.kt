@@ -72,7 +72,7 @@ class MainFragment : BaseFragment<MainFragmentBinding>(), View.OnClickListener {
     }
 
     private fun initViews() {
-        binding.etSearch.setOnClickListener(this)
+        binding.searchView.setOnClickListener(this)
     }
 
     private fun loadHome() {
@@ -90,7 +90,7 @@ class MainFragment : BaseFragment<MainFragmentBinding>(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.et_search -> {
+            R.id.search_view -> {
                 val action = MainFragmentDirections.actionMainToSearch()
                 findNavController().navigate(action)
             }

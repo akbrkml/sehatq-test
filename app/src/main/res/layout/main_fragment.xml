@@ -8,7 +8,7 @@
     tools:context=".ui.main.MainFragment">
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/et_search"
+        android:id="@+id/search_view"
         style="@style/InputStyle.SearchView"
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="@dimen/dimen_48dp"
@@ -29,7 +29,7 @@
         android:layout_height="@dimen/dimen_0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_search"
+        app:layout_constraintTop_toBottomOf="@id/search_view"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <ProgressBar
