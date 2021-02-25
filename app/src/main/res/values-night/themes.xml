@@ -13,4 +13,25 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="InputStyle">
+        <item name="android:paddingStart">@dimen/dimen_12dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_12dp</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="InputStyle.TypeText.Rounded" parent="InputStyle">
+        <item name="android:background">@drawable/ic_shape_rectangle_rounded</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">#BBBBBB</item>
+    </style>
+
+    <style name="InputStyle.SearchView" parent="InputStyle.TypeText.Rounded">
+        <item name="android:drawableEnd">@drawable/ic_search</item>
+        <item name="drawableTint">#BBBBBB</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">#BBBBBB</item>
+    </style>
 </resources>
