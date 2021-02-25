@@ -11,6 +11,7 @@ import com.badrun.sehatq_test.base.BaseFragment
 import com.badrun.sehatq_test.databinding.ProductDetailFragmentBinding
 import com.badrun.sehatq_test.domain.model.Product
 import com.badrun.sehatq_test.utils.ext.share
+import com.badrun.sehatq_test.utils.ext.showMessage
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ProductDetailFragment : BaseFragment<ProductDetailFragmentBinding>(), View.OnClickListener {
@@ -65,7 +66,17 @@ class ProductDetailFragment : BaseFragment<ProductDetailFragmentBinding>(), View
                     setStatusFavorite(isFavorite)
                 }
             }
-            R.id.btn_buy -> if (this::product.isInitialized) viewModel.addTransaction(productId = product.id)
+            R.id.btn_buy -> if (this::product.isInitialized) {
+                viewModel.addTransaction(productId = product.id)
+                requireActivity().showMessage(
+                    view = binding.containerDetail,
+                    message =  getString(R.string.label_success_buy_product),
+                    title = getString(R.string.label_see_history)
+                ) {
+                    val action = ProductDetailFragmentDirections.actionDetailToHistory()
+                    findNavController().navigate(action)
+                }
+            }
         }
     }
 

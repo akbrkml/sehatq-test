@@ -43,6 +43,10 @@
             android:name="product"
             app:argType="com.badrun.sehatq_test.domain.model.Product" />
 
+        <action
+            android:id="@+id/action_detail_to_history"
+            app:destination="@id/historyFragment" />
+
     </fragment>
 
     <fragment
