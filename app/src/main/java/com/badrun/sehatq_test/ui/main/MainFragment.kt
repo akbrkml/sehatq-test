@@ -12,6 +12,7 @@ import com.badrun.sehatq_test.data.Resource
 import com.badrun.sehatq_test.databinding.MainFragmentBinding
 import com.badrun.sehatq_test.domain.model.Product
 import com.badrun.sehatq_test.ui.callback.OnItemClickListener
+import com.badrun.sehatq_test.utils.ext.showMessage
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class MainFragment : BaseFragment<MainFragmentBinding>(), View.OnClickListener {
@@ -44,6 +45,7 @@ class MainFragment : BaseFragment<MainFragmentBinding>(), View.OnClickListener {
                 }
                 is Resource.Error -> {
                     hideProgressBar()
+                    requireActivity().showMessage(binding.main, it.message ?: getString(R.string.label_unexpected_error))
                 }
             }
         })
